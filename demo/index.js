@@ -1,7 +1,11 @@
+//Website header and Title text
 
+let webtitle = document.getElementById("webtiele")
 let title = document.getElementById("title");
-title.innerText="This is Eample of Input Data"
-console.log(title.innerText);
+const titleString="Demo Web App"
+title.innerText=titleString;
+webtitle.innerText=titleString;
+console.log(titleString);
 
 
 
