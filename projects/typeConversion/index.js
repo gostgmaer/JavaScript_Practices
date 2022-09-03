@@ -9,3 +9,13 @@ console.log(titleString);
 
 
 
+let pi = 3.14159;
+let radies;
+let circumfarence;
+radies= window.prompt("ENter the radias of a circle");
+radies=Number(radies);
+//pi = 420.69
+
+circumfarence =2*pi*radies;
+console.log("circumfarence",typeof circumfarence,circumfarence);
+alert(circumfarence);
