@@ -49,5 +49,5 @@ btn.addEventListener("click", function (params) {
         case 6:
             day = "Saturday";
     }
-    document.getElementById("demo").innerHTML = "Today is " + day;
+    document.getElementById("demo").innerHTML = "Today is " + day + "   =>   "+ Date();
 })
