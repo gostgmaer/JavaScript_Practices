@@ -25,4 +25,18 @@ userName= userName.replace("s","r")
 console.log(userName);
 
 
+let fullName = "INADEV CORPORATIONS";
+
+let fname;
+let Lname;
+
+// Lname = fullName.slice(7)
+
+// fname = fullName.slice(0,6)
+fname = fullName.slice(0,fullName.indexOf(" "))
+Lname = fullName.slice(fullName.indexOf(" ")+1)
+console.log((fname));
+console.log((Lname));
+
+
 
