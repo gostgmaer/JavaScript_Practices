@@ -39,4 +39,9 @@ console.log((fname));
 console.log((Lname));
 
 
+//Method Chaining
 
+let userNewName= "sarkar";
+let letter = userNewName.charAt(0).toUpperCase().trim();
+
+console.log(userNewName,":",letter);
