@@ -18,7 +18,7 @@ let btn = document.getElementById("button")
 btn.addEventListener("click",function (params) {
     let guess = document.getElementById("enternumber").value;
     guessss +=1;
-    if (guess=ans) {
+    if (guess==ans) {
         alert(`${ans} is the #number. It's too you ${guessss} guesses`)
         console.log(`${ans} is the #number. It's too you ${guessss} guesses`);
         
