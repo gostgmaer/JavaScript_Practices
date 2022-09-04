@@ -129,6 +129,25 @@ let Fruit = ["apple",
 console.log("indexOf",Fruit.indexOf("mango"));
 
   console.log(Fruit);
+  // for (let index = 0; index < Fruit.length; index++) {
+  //   const element = Fruit[index];
+  //   element.toUpperCase()
+  //   console.log(element);
+  //   let newele = document.createElement("label")
+  //   let footerSection = document.getElementById("footer-section")
+  //   footerSection.append(newele.innerText=element)
+    
+    
+  // }
+
+  for (const fruit of Fruit) {
+   console.log(fruit);
+
+  }
+
+  for (const key in Fruit) {
+    console.log(key);
+  }
 
 
 
