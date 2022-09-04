@@ -12,32 +12,18 @@ console.log(titleString);
 //Show parent Div as a Modal
 
 var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
 var btns = document.getElementById("myBtn");
 btns.onclick = function () {
   modal.style.display = "block";
 }
 var btnsss = document.querySelector("#body-class");
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-// btns.onclick = function() {
-//   modal.style.display = "block";
-// }
-
 window.onload = function () {
   modal.style.display = "block";
 }
-
-
-// When the user clicks on <span> (x), close the modal
 span.onclick = function () {
   modal.style.display = "none";
 }
-
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
@@ -47,6 +33,102 @@ window.onclick = function (event) {
 
 
 
+
+//Application
+
+let Fruit = ["apple",
+  "apricot",
+  "avocado",
+  "banana",
+  "bell pepper",
+  "bilberry",
+  "blackberry",
+  "blackcurrant",
+  "blood orange",
+  "blueberry",
+  "boysenberry",
+  "breadfruit",
+  "canary melon",
+  "cantaloupe",
+  "cherimoya",
+  "cherry",
+  "chili pepper",
+  "clementine",
+  "cloudberry",
+  "coconut",
+  "cranberry",
+  "cucumber",
+  "currant",
+  "damson",
+  "date",
+  "dragonfruit",
+  "durian",
+  "eggplant",
+  "elderberry",
+  "feijoa",
+  "fig",
+  "goji berry",
+  "gooseberry",
+  "grape",
+  "grapefruit",
+  "guava",
+  "honeydew",
+  "huckleberry",
+  "jackfruit",
+  "jambul",
+  "jujube",
+  "kiwi fruit",
+  "kumquat",
+
+  "lime",
+  "loquat",
+  "lychee",
+  "mandarine",
+  "mango",
+  "mulberry",
+  "nectarine",
+  "nut",
+  "olive",
+  "orange",
+  "papaya",
+  "passionfruit",
+  "peach",
+  "pear",
+  "persimmon",
+  "physalis",
+  "pineapple",
+  "plum",
+  "pomegranate",
+  "pomelo",
+  "purple mangosteen",
+  "quince",
+  "raisin",
+  "rambutan",
+  "raspberry",
+  "redcurrant",
+  "rock melon",
+  "salal berry",
+  "satsuma",
+  "star fruit",
+  "strawberry",
+  "tamarillo",
+  "tangerine",
+  "tomato",
+  "ugli fruit",
+  "watermelon"]
+  console.log(Fruit.length);
+  Fruit.push("Lemon")
+  console.log(Fruit.length);
+  Fruit.pop()
+  console.log(Fruit.length);
+  Fruit.unshift("Alu")
+  console.log(Fruit[2]);
+  console.log(Fruit.length);
+  Fruit.shift()
+  // console.log(Fruit.push("Lemon"));
+console.log("indexOf",Fruit.indexOf("mango"));
+
+  console.log(Fruit);
 
 
 
