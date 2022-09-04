@@ -127,7 +127,9 @@ let Fruit = ["apple",
   Fruit.shift()
   // console.log(Fruit.push("Lemon"));
 console.log("indexOf",Fruit.indexOf("mango"));
-
+for (const key in Fruit) {
+  console.log(key);
+}
   console.log(Fruit);
   // for (let index = 0; index < Fruit.length; index++) {
   //   const element = Fruit[index];
@@ -140,14 +142,13 @@ console.log("indexOf",Fruit.indexOf("mango"));
     
   // }
 
+  Fruit=Fruit.sort().reverse()
   for (const fruit of Fruit) {
    console.log(fruit);
 
   }
 
-  for (const key in Fruit) {
-    console.log(key);
-  }
+ 
 
 
 
