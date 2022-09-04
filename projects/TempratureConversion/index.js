@@ -47,6 +47,38 @@ window.onclick = function (event) {
 
 
 
+//Application Coding Started
+
+let submitbtn = document.getElementById("submitbtn");
+
+
+submitbtn.addEventListener("click", function () {
+
+  let textfield = document.querySelector("#textfeild");
+  let cencial = document.querySelector("#cencial");
+  let fahrenhite = document.querySelector("#fahrenhite");
+  let resulttxt = document.querySelector("#result");
+  let result ;
+  if (cencial.checked==true) {
+
+    
+    result = (textfield.value - 32) * 5 / 9;
+
+    
+  } if (fahrenhite.checked==true) {
+    result = ((textfield.value)*1.8)+32
+    
+  }
+  resulttxt.innerText =`This is the Result: ${result}`
+  console.log(result);
+  
+
+  
+
+})
+
+
+
 
 
 

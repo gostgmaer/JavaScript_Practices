@@ -43,6 +43,11 @@
   display: flex;
 }
 
+#body-section{
+  padding-top: 20px;
+  min-height: 220px;
+}
+
 /* The Close Button */
 .close {
   color: #aaaaaa;
