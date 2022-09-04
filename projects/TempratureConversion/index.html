@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="webtiele">JAVASCRIPT TUTORIALS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body class="body-class">
+    <header class="text-center p-3">
+        <h1 id="title"></h1>
+    </header>
+    <div class=" text-center">
+        <button type="button" name="" id="myBtn" class="btn btn-success">Open Application Modal</button>
+    </div>
+   
+
+  
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal col-12 text-center">
+        
+          <!-- Modal content -->
+          <div class="modal-content col-6">
+            <section id="heading-section" class="bg-primary modal-head col-12 text-light">
+                <div class="col-8 text-left"> <span id="modal-title"></span>  </div>
+                <div class="col-4 text-right"> <span class="close">&times;</span> </div>
+            </section>
+            <section id="body-section" class="m-auto" >
+                <div class="col-12" >
+
+                    <div class="form-group">
+                        <div class="form-group form-inline">
+                            <label for="textfeild">Enter a Temprature</label>
+                            <input type="text" name="" id="textfeild" class="form-control" placeholder="" aria-describedby="helpId">
+                            
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="checkcel" id="cencial" > Celcius
+                            </label>
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="checkcel" id="fahrenhite"> Fahrenhite
+                            </label>
+                        </div>
+                        <button type="button" id="submitbtn" class="btn btn-primary">Calculate</button>
+                    </div>
+
+                   
+                    
+                </div>
+
+            </section>
+            <section id="footer-section">
+                <label id="result"> The Result will Show hare </label>
+            </section>
+           
+           
+          </div>
+        
+        </div>
+
+    
+   
+
+
+
+
+    <footer>
+        <script src="./index.js"></script>
+        <script src="./assets/js/index.js"></script>
+    </footer>
+    
+</body>
+</html>
