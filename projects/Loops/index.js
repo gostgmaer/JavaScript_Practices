@@ -2,10 +2,12 @@
 
 let webtitle = document.getElementById("webtiele")
 let title = document.getElementById("title");
-const titleString="Demo Web App"
+const titleString="Loop Web App"
 title.innerText=titleString;
 webtitle.innerText=titleString;
 console.log(titleString);
 
+
+///
 
 
