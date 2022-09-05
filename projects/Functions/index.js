@@ -52,4 +52,40 @@ function displayDOM(output) {
     
 }
 
+//Function Express
 
+console.log("Function Expression");
+
+
+const greading = function (params) {
+    console.log("hellow");
+}
+
+greading();
+
+
+//counter
+
+Decress =document.getElementById("Decress");
+Increase=document.getElementById("Increase");
+
+let count=0;
+
+// function increseCount(){
+//     count +=1;
+//     document.getElementById("my_lbl").innerHTML=count;
+// }
+// function decreseCount(){
+//     count -=1;
+//     document.getElementById("my_lbl").innerHTML=count;
+// }
+
+Increase.onclick =function (params) {
+        count +=1;
+    document.getElementById("my_lbl").innerHTML=count;
+}
+
+Decress.onclick =function (params) {
+    count -=1;
+document.getElementById("my_lbl").innerHTML=count;
+}
