@@ -148,7 +148,27 @@ for (const key in Fruit) {
 
   }
 
- 
+  let newNUm = Array.from({length: 120}, () => Math.floor(Math.random() * 40));
+console.log(newNUm);
+let squress = newNUm.map(squre)
+let quebes = newNUm.map(qube)
+
+quebes.forEach(print)
+
+function squre(params) {
+  return Math.pow(params,2)
+  
+}
+
+function print(params) {
+  console.log(params);
+  
+}
+
+function qube(params) {
+  return Math.pow(params,3)
+  
+}
 
 
 
