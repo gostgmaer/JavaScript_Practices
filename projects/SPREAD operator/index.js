@@ -116,3 +116,24 @@ console.log(Max);
 color.push(...chinense);
 
 console.log(color);
+
+
+//Rest Parameter
+
+let a =1;
+let b =2;
+let c= 3;
+let d = 4;
+let e=11;
+
+
+console.log(sum(a,b,c,d,e,c,e));
+function sum(...numbers) {
+  let total = 0;
+  for (const iterator of numbers) {
+    total += iterator;
+    
+  }
+  return total
+  
+}
