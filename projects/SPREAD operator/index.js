@@ -3,7 +3,7 @@
 let webtitle = document.getElementById("webtiele")
 let title = document.getElementById("title");
 let modalTitle = document.getElementById("modal-title");
-const titleString = "TempratureConversion Web App"
+const titleString = "SPREAD operator Web App"
 title.innerText = titleString;
 webtitle.innerText = titleString;
 modalTitle.innerText = titleString;
@@ -45,9 +45,74 @@ window.onclick = function (event) {
 }
 
 
+let userName = "Kishor Sarkar"
+let color= ["Actinic",
+"Ultra Indigo",
+"Amarklor",
+"Kalish",
+"Garrow",
+"Infra-White",
+"Fuligin",
+"Grue",
+"bleen",
+"Mull",
+"glow",
+"Hooloovoo",
+"Octarine",
+"Squant",
+"Jale",
+"Ulfire",
+"Dolm",
+"tang",
+"burn",
+"Berl",
+"Crynor",
+"Nusp",
+"Onsible",
+"Htun",
+"Sangoire",
+"Gloxym",
+"Smaudre",
+"Rawn",
+"Pallow",
+"Plaid",
+"Shattan",
+"Flange",
+"Apocyan",
+"Cosmogone",
+"Gant",
+"Irrigo",
+"Peligin",
+"Violant",
+"Viric",
+"El Gris/Gray",
+"Gloze",
+"Flush"  ]
+
+let chinense= [
+  "Adjuma",
+  "Ají dulce",
+  "Carolina Reaper",
+  "Datil",
+  "Fatalii",
+  "Habanero",
+  "Hainan yellow lantern chili",
+  "Madame Jeanette",
+  "Naga jolokia",
+  "Red Savina habanero",
+  "Scotch bonnet",
+  "Trinidad moruga scorpion",
+  "Trinidad scorpion"
+];
+console.log(color);
 
 
+let newNUm = Array.from({length: 120}, () => Math.floor(Math.random() * 40));
+console.log(newNUm);
+let Max = Math.max(...newNUm);
 
+console.log(Max);
 
+color.push(...chinense);
 
-
+console.log(color);
