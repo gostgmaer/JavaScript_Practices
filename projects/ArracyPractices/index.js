@@ -147,6 +147,7 @@ for (const key in Fruit) {
    console.log(fruit);
 
   }
+//Array .map
 
   let newNUm = Array.from({length: 120}, () => Math.floor(Math.random() * 40));
 console.log(newNUm);
@@ -173,3 +174,24 @@ function qube(params) {
 
 
 
+//Array.Filter
+
+
+
+
+let ages = Array.from({length: 112}, () => Math.floor(Math.random() * 40));
+console.log(ages);
+let adults = ages.filter(checkAge)
+console.log("Array.Filter method Filter aged more then 18");
+
+adults.forEach(display)
+
+function checkAge(params) {
+  return params >= 18;
+  
+}
+function display(element) {
+  console.log(element);
+ 
+  
+}
