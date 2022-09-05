@@ -147,9 +147,94 @@ for (const key in Fruit) {
    console.log(fruit);
 
   }
+//Array .map
 
+  let newNUm = Array.from({length: 120}, () => Math.floor(Math.random() * 40));
+console.log(newNUm);
+let squress = newNUm.map(squre)
+let quebes = newNUm.map(qube)
+
+quebes.forEach(print)
+
+function squre(params) {
+  return Math.pow(params,2)
+  
+}
+
+function print(params) {
+  console.log(params);
+  
+}
+
+function qube(params) {
+  return Math.pow(params,3)
+  
+}
+
+
+
+
+//Array.Filter
+
+
+
+
+let ages = Array.from({length: 112}, () => Math.floor(Math.random() * 40));
+console.log(ages);
+let adults = ages.filter(checkAge)
+console.log("Array.Filter method Filter aged more then 18");
+
+adults.forEach(display)
+
+function checkAge(params) {
+  return params >= 18;
+  
+}
+function display(element) {
+  console.log(element);
  
+  
+}
+// Array.reduce()
+
+console.warn("Array.reduce() Method Log");
+let prices = Array.from({length: 112}, () => Math.floor(Math.random() * 400 )+100);
+console.log(prices);
+
+let total = prices.reduce(checkOut);
+console.log(`Total is $ ${total}`);
+function checkOut(total,params) {
+  return total+params;
+
+  
+}
+
+//shot array
+// console.log(prices.sort());
+
+console.log(prices);
 
 
+let pointdes =prices.sort(sortdec)
+pointdes.forEach(showmarks)
+
+let pointase = prices.sort(sortase)
+pointase.forEach(showmarks)
+
+function sortdec(x,y) {
+  return y-x;
+
+  
+}
 
 
+function sortase(x,y) {
+  return x-y;
+
+  
+}
+
+function showmarks(params) {
+  console.log(params);
+  
+}
