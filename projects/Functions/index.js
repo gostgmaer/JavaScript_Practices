@@ -34,22 +34,22 @@ let myNum = 22;
 // }
 
 
-Sum(2,3,displayDOM)
-function Sum(x,y,Callback) {
-    let result = x+y;
+Sum(2, 3, displayDOM)
+function Sum(x, y, Callback) {
+    let result = x + y;
     Callback(result);
-    
+
 }
 
 function displayconsole(output) {
     console.log(output);
-   
-    
+
+
 }
 
 function displayDOM(output) {
-    document.getElementById("my_lbl").innerHTML=output;
-    
+    document.getElementById("my_lbl").innerHTML = output;
+
 }
 
 //Function Express
@@ -66,10 +66,10 @@ greading();
 
 //counter
 
-Decress =document.getElementById("Decress");
-Increase=document.getElementById("Increase");
+Decress = document.getElementById("Decress");
+Increase = document.getElementById("Increase");
 
-let count=0;
+let count = 0;
 
 // function increseCount(){
 //     count +=1;
@@ -80,12 +80,26 @@ let count=0;
 //     document.getElementById("my_lbl").innerHTML=count;
 // }
 
-Increase.onclick =function (params) {
-        count +=1;
-    document.getElementById("my_lbl").innerHTML=count;
+Increase.onclick = function (params) {
+    count += 1;
+    document.getElementById("my_lbl").innerHTML = count;
 }
 
-Decress.onclick =function (params) {
-    count -=1;
-document.getElementById("my_lbl").innerHTML=count;
+Decress.onclick = function (params) {
+    count -= 1;
+    document.getElementById("my_lbl").innerHTML = count;
 }
+
+
+console.log("Array Function");
+const greeting = (userName) => console.log(`hellow ${userName}`);
+
+
+const precentage = (x, y) => 
+    x / y * 100
+
+
+
+console.log(`${precentage(20, 30)} %`);
+
+// precentage(20, 10)
