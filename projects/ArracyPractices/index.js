@@ -195,3 +195,46 @@ function display(element) {
  
   
 }
+// Array.reduce()
+
+console.warn("Array.reduce() Method Log");
+let prices = Array.from({length: 112}, () => Math.floor(Math.random() * 400 )+100);
+console.log(prices);
+
+let total = prices.reduce(checkOut);
+console.log(`Total is $ ${total}`);
+function checkOut(total,params) {
+  return total+params;
+
+  
+}
+
+//shot array
+// console.log(prices.sort());
+
+console.log(prices);
+
+
+let pointdes =prices.sort(sortdec)
+pointdes.forEach(showmarks)
+
+let pointase = prices.sort(sortase)
+pointase.forEach(showmarks)
+
+function sortdec(x,y) {
+  return y-x;
+
+  
+}
+
+
+function sortase(x,y) {
+  return x-y;
+
+  
+}
+
+function showmarks(params) {
+  console.log(params);
+  
+}
