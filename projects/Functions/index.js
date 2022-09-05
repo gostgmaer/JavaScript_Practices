@@ -15,11 +15,41 @@ let myNum = 22;
 // myNum = myNum.toLocaleString("hi-IN");
 // myNum = myNum.toLocaleString("en-uk",{style: "currency",currency:"CAD"});
 // myNum = myNum.toLocaleString("undefine", { style: "percent" });
-myNum = myNum.toLocaleString(undefined, { style: "unit", unit: "Fahrenheit" });
+// myNum = myNum.toLocaleString(undefined, { style: "unit", unit: "Fahrenheit" });
 
-console.log(myNum);
-function firstFunction(params) {
-    console.log("firstFunction Working");
+// console.log(myNum);
+// function firstFunction(params) {
+//     console.log("firstFunction Working");
+// }
+
+// firstFunction(myNum);
+
+//Callback Function
+
+// let total = sum(2,3);
+// displayDOM(total);
+// function sum(x,y) {
+//     let result  = x+y;
+//     return result;
+// }
+
+
+Sum(2,3,displayDOM)
+function Sum(x,y,Callback) {
+    let result = x+y;
+    Callback(result);
+    
 }
 
-firstFunction(myNum);
+function displayconsole(output) {
+    console.log(output);
+   
+    
+}
+
+function displayDOM(output) {
+    document.getElementById("my_lbl").innerHTML=output;
+    
+}
+
+
