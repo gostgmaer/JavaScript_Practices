@@ -103,3 +103,7 @@ const precentage = (x, y) =>
 console.log(`${precentage(20, 30)} %`);
 
 // precentage(20, 10)
+
+
+let ages = Array.from({length: 112}, () => Math.floor(Math.random() * 40));
+console.log(ages);
