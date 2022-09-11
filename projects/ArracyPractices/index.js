@@ -2467,7 +2467,7 @@ const result =[
   }
 ]
 
-
+let cards = ["A", "2","3","4","5","6","7","8","9","J","Q","K"]
 //Application
 
 let Fruit = ["apple",
@@ -2737,3 +2737,18 @@ result.forEach(element => {
   }
 });
 console.log(result);
+shuffle(cards)
+console.log(cards);
+
+function shuffle(array) {
+    let currantIndex = array.length;
+    while (currantIndex != 0) {
+        let randomIndex = Math.floor(Math.random()*array.length);
+        currantIndex -= 1
+        let temp  =array[currantIndex];
+        array[currantIndex]=array[randomIndex];
+        array[randomIndex]=temp;
+        
+    }
+    return array;
+}
