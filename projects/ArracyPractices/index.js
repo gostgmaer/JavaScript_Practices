@@ -2739,6 +2739,7 @@ result.forEach(element => {
 console.log(result);
 shuffle(cards)
 console.log(cards);
+cards.forEach(card=> console.log(card))
 
 function shuffle(array) {
     let currantIndex = array.length;
