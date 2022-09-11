@@ -110,3 +110,18 @@ console.log(plyer1.score);
 
 
 //Constructor
+
+class students{
+  constructor(name,age,gpa){
+    this.name= name;
+    this.age = age;
+    this.gpa = gpa;
+  }
+  study(){
+    console.log(`${this.name} is styuding`);
+  }
+}
+
+const student1 = new students("Kishor",22,9.8)
+console.log(student1);
+student1.study()
