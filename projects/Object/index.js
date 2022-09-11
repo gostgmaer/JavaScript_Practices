@@ -55,12 +55,12 @@ const object = {
   "email": "tpendock0@barnesandnoble.com",
   "gender": "Female",
   "ip_address": "55.19.25.23",
-  drive: function () { console.log(`Drive The Car ${this.first_name}`);  }
+  drive: function () { console.log(`Drive The Car ${this.first_name}`); }
 }
 
 
 
-console.log(object.ip_address,object.email);
+console.log(object.ip_address, object.email);
 object.drive()
 
 
@@ -72,7 +72,7 @@ const object2 = {
   "email": "tpendock0@barnesandnoble.com",
   "gender": "Female",
   "ip_address": "55.19.25.23",
-  drive: function () { console.log(`Drive The Car ${this.first_name}`);  }
+  drive: function () { console.log(`Drive The Car ${this.first_name}`); }
 }
 const object1 = {
   "id": 10,
@@ -81,18 +81,29 @@ const object1 = {
   "email": "jjeandel9@icio.us",
   "gender": "Male",
   "ip_address": "190.46.253.222",
-  drive: function () { console.log(`Drive a Car wit h id 2 ${this.first_name}`);  }
+  drive: function () { console.log(`Drive a Car wit h id 2 ${this.first_name}`); }
 }
 
-console.log(object1.ip_address,object1.email);
+console.log(object1.ip_address, object1.email);
 object2.drive()
 
 
-window.name= object1.ip_address
+window.name = object1.ip_address
 console.log(window.name);
 
 
 //Class
 
+class plyear {
+  score = 0;
+  pause() {
+    console.log("You Pause the Game");
+  }
+  exit() {
+    console.log("You exit the Game");
+  }
+}
 
-
+const plyer1 = new plyear();
+plyer1.score  +=1
+console.log(plyer1.score);
