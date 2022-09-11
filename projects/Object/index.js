@@ -86,3 +86,7 @@ const object1 = {
 
 console.log(object1.ip_address,object1.email);
 object2.drive()
+
+
+window.name= object1.ip_address
+console.log(window.name);
