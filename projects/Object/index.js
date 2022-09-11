@@ -107,3 +107,6 @@ class plyear {
 const plyer1 = new plyear();
 plyer1.score  +=1
 console.log(plyer1.score);
+
+
+//Constructor
