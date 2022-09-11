@@ -107,3 +107,7 @@ console.log(`${precentage(20, 30)} %`);
 
 let ages = Array.from({length: 112}, () => Math.floor(Math.random() * 40));
 console.log(ages);
+
+
+//nasted Functions
+
