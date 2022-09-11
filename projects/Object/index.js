@@ -46,8 +46,17 @@ window.onclick = function (event) {
 
 
 
+//Application Started
 
+const object = {
+  "id": 1,
+  "first_name": "Taryn",
+  "last_name": "Pendock",
+  "email": "tpendock0@barnesandnoble.com",
+  "gender": "Female",
+  "ip_address": "55.19.25.23",
+  drive: function () { console.log("Drive a Car");  }
+}
 
-
-
-
+console.log(object.ip_address,object.email);
+object.drive()
