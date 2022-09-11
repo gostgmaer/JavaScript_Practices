@@ -3,7 +3,7 @@
 let webtitle = document.getElementById("webtiele")
 let title = document.getElementById("title");
 let modalTitle = document.getElementById("modal-title");
-const titleString = "TempratureConversion Web App"
+const titleString = "Map Method Web App"
 title.innerText = titleString;
 webtitle.innerText = titleString;
 modalTitle.innerText = titleString;
@@ -44,7 +44,34 @@ window.onclick = function (event) {
   }
 }
 
+//Application Started
 
+
+const store = new Map([
+  ["t-shirt", 30],
+  ["Jeans", 39],
+  ["underware", 20],
+  ["Shirt", 99],
+  ["socks", 10]
+]);
+
+let shoopingCart = 0;
+shoopingCart += store.get("t-shirt");
+shoopingCart += store.get("Shirt");
+console.log(shoopingCart);
+
+store.set("hat",44);
+store.delete("socks")
+console.log(store.size);
+console.log(store.has("Jeans"));
+
+
+
+
+store.forEach((value, key) => {
+  console.log(`${key} $${value}`);
+
+});
 
 
 
