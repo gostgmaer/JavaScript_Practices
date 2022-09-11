@@ -103,3 +103,28 @@ const precentage = (x, y) =>
 console.log(`${precentage(20, 30)} %`);
 
 // precentage(20, 10)
+
+
+let ages = Array.from({length: 112}, () => Math.floor(Math.random() * 40));
+console.log(ages);
+
+
+//nasted Functions
+
+let userName = "KISHOR";
+let userIndex = 0;
+
+login();
+
+function login() {
+    desplayUser();
+    displayUserInbox();
+    function desplayUser() {
+        console.log(`Welcome ${userName}`);
+        
+    }
+    function displayUserInbox() {
+        console.log(`You have ${userIndex} New Message`);
+        
+    }
+}
