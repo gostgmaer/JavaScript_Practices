@@ -90,3 +90,9 @@ object2.drive()
 
 window.name= object1.ip_address
 console.log(window.name);
+
+
+//Class
+
+
+
