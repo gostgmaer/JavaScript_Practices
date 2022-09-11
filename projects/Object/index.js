@@ -110,3 +110,32 @@ console.log(plyer1.score);
 
 
 //Constructor
+
+class students{
+  constructor(name,age,gpa){
+    this.name= name;
+    this.age = age;
+    this.gpa = gpa;
+  }
+  study(){
+    console.log(`${this.name} is styuding`);
+  }
+}
+
+const student1 = new students("Kishor",22,9.8)
+console.log(student1);
+student1.study()
+
+try {
+  // console.log();
+  let x= window.prompt ("Enter a Number");
+  x= Number(x);
+  if (isNaN(x)) throw (`${x} is not a number`);
+    
+  
+  console.log(`$ ${x} is a number`);
+  
+} catch (error) {
+  console.log(error);
+  
+}
