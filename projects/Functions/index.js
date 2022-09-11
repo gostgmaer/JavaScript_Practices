@@ -111,3 +111,20 @@ console.log(ages);
 
 //nasted Functions
 
+let userName = "KISHOR";
+let userIndex = 0;
+
+login();
+
+function login() {
+    desplayUser();
+    displayUserInbox();
+    function desplayUser() {
+        console.log(`Welcome ${userName}`);
+        
+    }
+    function displayUserInbox() {
+        console.log(`You have ${userIndex} New Message`);
+        
+    }
+}
