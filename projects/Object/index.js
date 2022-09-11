@@ -46,8 +46,67 @@ window.onclick = function (event) {
 
 
 
+//Application Started
+
+const object = {
+  "id": 1,
+  "first_name": "Taryn",
+  "last_name": "Pendock",
+  "email": "tpendock0@barnesandnoble.com",
+  "gender": "Female",
+  "ip_address": "55.19.25.23",
+  drive: function () { console.log(`Drive The Car ${this.first_name}`); }
+}
 
 
 
+console.log(object.ip_address, object.email);
+object.drive()
 
 
+// This keyword
+const object2 = {
+  "id": 1,
+  "first_name": "Taryn",
+  "last_name": "Pendock",
+  "email": "tpendock0@barnesandnoble.com",
+  "gender": "Female",
+  "ip_address": "55.19.25.23",
+  drive: function () { console.log(`Drive The Car ${this.first_name}`); }
+}
+const object1 = {
+  "id": 10,
+  "first_name": "Jethro",
+  "last_name": "Jeandel",
+  "email": "jjeandel9@icio.us",
+  "gender": "Male",
+  "ip_address": "190.46.253.222",
+  drive: function () { console.log(`Drive a Car wit h id 2 ${this.first_name}`); }
+}
+
+console.log(object1.ip_address, object1.email);
+object2.drive()
+
+
+window.name = object1.ip_address
+console.log(window.name);
+
+
+//Class
+
+class plyear {
+  score = 0;
+  pause() {
+    console.log("You Pause the Game");
+  }
+  exit() {
+    console.log("You exit the Game");
+  }
+}
+
+const plyer1 = new plyear();
+plyer1.score  +=1
+console.log(plyer1.score);
+
+
+//Constructor
