@@ -3,7 +3,7 @@
 let webtitle = document.getElementById("webtiele")
 let title = document.getElementById("title");
 let modalTitle = document.getElementById("modal-title");
-const titleString = "TempratureConversion Web App"
+const titleString = "sTATIC pART Web App"
 title.innerText = titleString;
 webtitle.innerText = titleString;
 modalTitle.innerText = titleString;
@@ -51,3 +51,36 @@ window.onclick = function (event) {
 
 
 
+
+//aPPLICATION coDE
+
+console.log("setInterVal ===================");
+
+// function name() {
+//   // for (let index = 0; index=100; index++) {
+//   //   console.log("This is Code"+index);
+//   // }
+//   for (let index = 0; index < 10; index++) {
+//     const element = array[index];
+//     console.log(element);
+    
+//   }
+// }
+
+let count = 0;
+let max = window.prompt("Enter a Number:");
+max=Number(max)
+
+setInterval(() => {
+  countUp()
+}, 1000);
+
+function countUp() {
+  count +=1;
+  console.log(count);
+  if (count == max) {
+    clearInterval(setInterval);
+    
+  }
+  
+}
