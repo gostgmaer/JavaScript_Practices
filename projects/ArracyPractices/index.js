@@ -14,465 +14,465 @@ console.log(titleString);
 var modal = document.getElementById("myModal");
 var btns = document.getElementById("myBtn");
 btns.onclick = function () {
-  modal.style.display = "block";
+    modal.style.display = "block";
 }
 var btnsss = document.querySelector("#body-class");
 var span = document.getElementsByClassName("close")[0];
 window.onload = function () {
-  modal.style.display = "block";
+    modal.style.display = "block";
 }
 span.onclick = function () {
-  modal.style.display = "none";
+    modal.style.display = "none";
 }
 window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
 
-const scheduleDate= {
-  "room_schedule": {
-      "room_id": 1,
-      "schedule": [
-          {
-              "week_day_id": 1,
-              "capacity": 100,
-              "start_time": "04:00:00",
-              "end_time": "18:00:00",
-              "week_day_name": "Monday",
-             
-              "week_day_checked": "1"
-          },
-          {
-              "week_day_id": 2,
-              "capacity": 100,
-              "start_time": "03:00:00",
-              "end_time": "18:00:00",
-              "week_day_name": "Tuesday",
-             
-              "week_day_checked": "1"
-          },
-          {
-              "week_day_id": 3,
-              "capacity": 100,
-              "start_time": "03:00:00",
-              "end_time": "17:00:00",
-              "week_day_name": "Wednesday",
-              
-              "week_day_checked": "1"
-          },
-          {
-              "week_day_id": 4,
-              "capacity": 100,
-              "start_time": "03:00:00",
-              "end_time": "17:00:00",
-              "week_day_name": "Thursday ",
-              
-              "week_day_checked": "1"
-          },
-          {
-              "week_day_id": 5,
-              "capacity": 100,
-              "start_time": "04:00:00",
-              "end_time": "17:00:00",
-              "week_day_name": "Friday",
-             
-              "week_day_checked": "1"
-          },
-          {
-              "week_day_id": 6,
-              "capacity": 100,
-              "start_time": "08:00:00",
-              "end_time": "17:00:00",
-              "week_day_name": "Saturday",
-            
-              "week_day_checked": "1"
-          },
-          {
-              "week_day_id": 7,
-              "capacity": 100,
-              "start_time": "08:00:00",
-              "end_time": "17:00:00",
-              "week_day_name": "Sunday",
-             
-              "week_day_checked": "1"
-          }
-      ],
-      "breaks": [
-          {
-              "break_start_time": "11:00:00",
-              "break_end_time": "12:00:00",
-              "week_day_id": 1
-          },
-          {
-              "break_start_time": "11:00:00",
-              "break_end_time": "12:00:00",
-              "week_day_id": 2
-          },
-          {
-              "break_start_time": "12:00:00",
-              "break_end_time": "13:00:00",
-              "week_day_id": 3
-          },
-          {
-              "break_start_time": "12:00:00",
-              "break_end_time": "13:00:00",
-              "week_day_id": 4
-          },
-          {
-              "break_start_time": "12:00:00",
-              "break_end_time": "13:00:00",
-              "week_day_id": 5
-          },
-          {
-              "break_start_time": "12:00:00",
-              "break_end_time": "13:00:00",
-              "week_day_id": 6
-          },
-          {
-              "break_start_time": "12:00:00",
-              "break_end_time": "13:00:00",
-              "week_day_id": 7
-          }
-      ]
-  },
-  "room_holiday": [
-      {
-          "id": 1,
-          "ext_system_id": 1,
-          "holiday_date": "2022-09-30T00:00:00.000Z",
-          "holiday_name": "D HOLIDAY",
-          "holiday_description": "description"
-      }
-  ],
-  "exceptions": {
-      "ext_system_id": 1,
-      "schedule": [],
-      "breaks": []
-  },
-  "status": 200
+const scheduleDate = {
+    "room_schedule": {
+        "room_id": 1,
+        "schedule": [
+            {
+                "week_day_id": 1,
+                "capacity": 100,
+                "start_time": "04:00:00",
+                "end_time": "18:00:00",
+                "week_day_name": "Monday",
+
+                "week_day_checked": "1"
+            },
+            {
+                "week_day_id": 2,
+                "capacity": 100,
+                "start_time": "03:00:00",
+                "end_time": "18:00:00",
+                "week_day_name": "Tuesday",
+
+                "week_day_checked": "1"
+            },
+            {
+                "week_day_id": 3,
+                "capacity": 100,
+                "start_time": "03:00:00",
+                "end_time": "17:00:00",
+                "week_day_name": "Wednesday",
+
+                "week_day_checked": "1"
+            },
+            {
+                "week_day_id": 4,
+                "capacity": 100,
+                "start_time": "03:00:00",
+                "end_time": "17:00:00",
+                "week_day_name": "Thursday ",
+
+                "week_day_checked": "1"
+            },
+            {
+                "week_day_id": 5,
+                "capacity": 100,
+                "start_time": "04:00:00",
+                "end_time": "17:00:00",
+                "week_day_name": "Friday",
+
+                "week_day_checked": "1"
+            },
+            {
+                "week_day_id": 6,
+                "capacity": 100,
+                "start_time": "08:00:00",
+                "end_time": "17:00:00",
+                "week_day_name": "Saturday",
+
+                "week_day_checked": "1"
+            },
+            {
+                "week_day_id": 7,
+                "capacity": 100,
+                "start_time": "08:00:00",
+                "end_time": "17:00:00",
+                "week_day_name": "Sunday",
+
+                "week_day_checked": "1"
+            }
+        ],
+        "breaks": [
+            {
+                "break_start_time": "11:00:00",
+                "break_end_time": "12:00:00",
+                "week_day_id": 1
+            },
+            {
+                "break_start_time": "11:00:00",
+                "break_end_time": "12:00:00",
+                "week_day_id": 2
+            },
+            {
+                "break_start_time": "12:00:00",
+                "break_end_time": "13:00:00",
+                "week_day_id": 3
+            },
+            {
+                "break_start_time": "12:00:00",
+                "break_end_time": "13:00:00",
+                "week_day_id": 4
+            },
+            {
+                "break_start_time": "12:00:00",
+                "break_end_time": "13:00:00",
+                "week_day_id": 5
+            },
+            {
+                "break_start_time": "12:00:00",
+                "break_end_time": "13:00:00",
+                "week_day_id": 6
+            },
+            {
+                "break_start_time": "12:00:00",
+                "break_end_time": "13:00:00",
+                "week_day_id": 7
+            }
+        ]
+    },
+    "room_holiday": [
+        {
+            "id": 1,
+            "ext_system_id": 1,
+            "holiday_date": "2022-09-30T00:00:00.000Z",
+            "holiday_name": "D HOLIDAY",
+            "holiday_description": "description"
+        }
+    ],
+    "exceptions": {
+        "ext_system_id": 1,
+        "schedule": [],
+        "breaks": []
+    },
+    "status": 200
 }
 const result = [
-  {
-      "id": 136,
-      "first_name": "EKTA",
-      "last_name": "SINGH",
-      "isd_code": "+1",
-      "phone": "9768508488",
-      "email": "Nitinpatil@gmail.com",
-      "token": "J 111362238",
-      "alien_number": "skIJVVS:637",
-      "assinged_queue": [
-          {
-              "queue_id": 1,
-              "queue_name": "Adjudication",
-              "token": "J 111362238",
-              "meeting_room_id": "",
-              "meeting_duration": 71,
-              "alien_number": "skIJVVS:637",
-              "created_on": "2022-04-26T10:12:01.000Z",
-              "updated_on": "2022-05-08T02:31:39.000Z",
-              "status": "3",
-              "provider_id": 102,
-              "message": null
-          },
-          {
-              "queue_id": 2,
-              "queue_name": "Interview",
-              "token": "J 111362238",
-              "meeting_room_id": null,
-              "meeting_duration": 7,
-              "alien_number": "skIJVVS:637",
-              "created_on": "2022-05-08T02:31:32.000Z",
-              "updated_on": "2022-05-08T02:31:56.000Z",
-              "status": "3",
-              "provider_id": 102,
-              "message": null
-          },
-          {
-              "queue_id": 3,
-              "queue_name": "Oath Administration",
-              "token": "J 111362238",
-              "meeting_room_id": null,
-              "meeting_duration": null,
-              "alien_number": "skIJVVS:637",
-              "created_on": "2022-05-08T02:31:38.000Z",
-              "updated_on": "2022-05-10T04:40:32.000Z",
-              "status": "5",
-              "provider_id": 102,
-              "message": "Plan review process completed"
-          }
-      ],
-      "staff_info": [
-          {
-              "provider_id": 102,
-              "provider_first_name": "Varun",
-              "provider_last_name": "Sengupta",
-              "agent_id": "A607093"
-          },
-          {
-              "provider_id": 102,
-              "provider_first_name": "Varun",
-              "provider_last_name": "Sengupta",
-              "agent_id": "A607093"
-          },
-          {
-              "provider_id": 102,
-              "provider_first_name": "Varun",
-              "provider_last_name": "Sengupta",
-              "agent_id": "A607093"
-          }
-      ]
-  },
-  {
-      "id": 135,
-      "first_name": "EKTA",
-      "last_name": "SINGH",
-      "isd_code": "+1",
-      "phone": "7033627842",
-      "email": "esingh20s@gmail.com",
-      "token": "J 111352236",
-      "alien_number": "0g3OXNX:631",
-      "assinged_queue": [
-          {
-              "queue_id": 1,
-              "queue_name": "Adjudication",
-              "token": "J 111352236",
-              "meeting_room_id": "",
-              "meeting_duration": null,
-              "alien_number": "0g3OXNX:631",
-              "created_on": "2022-04-19T21:16:55.000Z",
-              "updated_on": "2022-05-08T04:17:23.000Z",
-              "status": "5",
-              "provider_id": 102,
-              "message": "Plan review process completed"
-          }
-      ],
-      "staff_info": [
-          {
-              "provider_id": 102,
-              "provider_first_name": "Varun",
-              "provider_last_name": "Sengupta",
-              "agent_id": "A607093"
-          }
-      ]
-  },
-  {
-      "id": 137,
-      "first_name": "EKTA",
-      "last_name": "SINGH",
-      "isd_code": "+1",
-      "phone": "9932868652",
-      "email": "Rt@yopmail.com",
-      "token": "J 111372239",
-      "alien_number": "4ht9U8B:653",
-      "assinged_queue": [
-          {
-              "queue_id": 1,
-              "queue_name": "Adjudication",
-              "token": "J 111372239",
-              "meeting_room_id": null,
-              "meeting_duration": null,
-              "alien_number": "4ht9U8B:653",
-              "created_on": "2022-04-27T13:39:04.000Z",
-              "updated_on": "2022-05-08T04:17:53.000Z",
-              "status": "5",
-              "provider_id": 102,
-              "message": "Plan review process completed"
-          }
-      ],
-      "staff_info": [
-          {
-              "provider_id": 102,
-              "provider_first_name": "Varun",
-              "provider_last_name": "Sengupta",
-              "agent_id": "A607093"
-          }
-      ]
-  },
-  {
-      "id": 138,
-      "first_name": "EKTA",
-      "last_name": "SINGH",
-      "isd_code": "+1",
-      "phone": "9768508480",
-      "email": "nitinpatiln73@gmail.com",
-      "token": "J 111382240",
-      "alien_number": "8r6RHJj:662",
-      "assinged_queue": [
-          {
-              "queue_id": 1,
-              "queue_name": "Adjudication",
-              "token": "J 111382240",
-              "meeting_room_id": "",
-              "meeting_duration": null,
-              "alien_number": "8r6RHJj:662",
-              "created_on": "2022-04-29T10:16:32.000Z",
-              "updated_on": "2022-05-08T18:16:12.000Z",
-              "status": "5",
-              "provider_id": 102,
-              "message": "Plan review process completed"
-          }
-      ],
-      "staff_info": [
-          {
-              "provider_id": 102,
-              "provider_first_name": "Varun",
-              "provider_last_name": "Sengupta",
-              "agent_id": "A607093"
-          }
-      ]
-  },
-  {
-      "id": 141,
-      "first_name": "EKTA",
-      "last_name": "SINGH",
-      "isd_code": "+1",
-      "phone": "9932858523",
-      "email": "Gd@gmail.com",
-      "token": "J 111412243",
-      "alien_number": "j4YTh4a:668",
-      "assinged_queue": [
-          {
-              "queue_id": 1,
-              "queue_name": "Adjudication",
-              "token": "J 111412243",
-              "meeting_room_id": null,
-              "meeting_duration": null,
-              "alien_number": "j4YTh4a:668",
-              "created_on": "2022-04-29T11:24:45.000Z",
-              "updated_on": "2022-05-08T22:02:52.000Z",
-              "status": "5",
-              "provider_id": 102,
-              "message": "Plan review process completed"
-          }
-      ],
-      "staff_info": [
-          {
-              "provider_id": 102,
-              "provider_first_name": "Varun",
-              "provider_last_name": "Sengupta",
-              "agent_id": "A607093"
-          }
-      ]
-  },
-  {
-      "id": 148,
-      "first_name": "EKTA",
-      "last_name": "SINGH",
-      "isd_code": "+1",
-      "phone": "9932868602",
-      "email": "Tt@yopmail.com",
-      "token": "J 111482252",
-      "alien_number": "p6a9AVT:730",
-      "assinged_queue": [
-          {
-              "queue_id": 1,
-              "queue_name": "Adjudication",
-              "token": "J 111482252",
-              "meeting_room_id": "",
-              "meeting_duration": null,
-              "alien_number": "p6a9AVT:730",
-              "created_on": "2022-05-06T10:44:36.000Z",
-              "updated_on": "2022-05-10T04:38:50.000Z",
-              "status": "5",
-              "provider_id": 102,
-              "message": "Plan review process completed"
-          }
-      ],
-      "staff_info": [
-          {
-              "provider_id": 102,
-              "provider_first_name": "Varun",
-              "provider_last_name": "Sengupta",
-              "agent_id": "A607093"
-          }
-      ]
-  }
+    {
+        "id": 136,
+        "first_name": "EKTA",
+        "last_name": "SINGH",
+        "isd_code": "+1",
+        "phone": "9768508488",
+        "email": "Nitinpatil@gmail.com",
+        "token": "J 111362238",
+        "alien_number": "skIJVVS:637",
+        "assinged_queue": [
+            {
+                "queue_id": 1,
+                "queue_name": "Adjudication",
+                "token": "J 111362238",
+                "meeting_room_id": "",
+                "meeting_duration": 71,
+                "alien_number": "skIJVVS:637",
+                "created_on": "2022-04-26T10:12:01.000Z",
+                "updated_on": "2022-05-08T02:31:39.000Z",
+                "status": "3",
+                "provider_id": 102,
+                "message": null
+            },
+            {
+                "queue_id": 2,
+                "queue_name": "Interview",
+                "token": "J 111362238",
+                "meeting_room_id": null,
+                "meeting_duration": 7,
+                "alien_number": "skIJVVS:637",
+                "created_on": "2022-05-08T02:31:32.000Z",
+                "updated_on": "2022-05-08T02:31:56.000Z",
+                "status": "3",
+                "provider_id": 102,
+                "message": null
+            },
+            {
+                "queue_id": 3,
+                "queue_name": "Oath Administration",
+                "token": "J 111362238",
+                "meeting_room_id": null,
+                "meeting_duration": null,
+                "alien_number": "skIJVVS:637",
+                "created_on": "2022-05-08T02:31:38.000Z",
+                "updated_on": "2022-05-10T04:40:32.000Z",
+                "status": "5",
+                "provider_id": 102,
+                "message": "Plan review process completed"
+            }
+        ],
+        "staff_info": [
+            {
+                "provider_id": 102,
+                "provider_first_name": "Varun",
+                "provider_last_name": "Sengupta",
+                "agent_id": "A607093"
+            },
+            {
+                "provider_id": 102,
+                "provider_first_name": "Varun",
+                "provider_last_name": "Sengupta",
+                "agent_id": "A607093"
+            },
+            {
+                "provider_id": 102,
+                "provider_first_name": "Varun",
+                "provider_last_name": "Sengupta",
+                "agent_id": "A607093"
+            }
+        ]
+    },
+    {
+        "id": 135,
+        "first_name": "EKTA",
+        "last_name": "SINGH",
+        "isd_code": "+1",
+        "phone": "7033627842",
+        "email": "esingh20s@gmail.com",
+        "token": "J 111352236",
+        "alien_number": "0g3OXNX:631",
+        "assinged_queue": [
+            {
+                "queue_id": 1,
+                "queue_name": "Adjudication",
+                "token": "J 111352236",
+                "meeting_room_id": "",
+                "meeting_duration": null,
+                "alien_number": "0g3OXNX:631",
+                "created_on": "2022-04-19T21:16:55.000Z",
+                "updated_on": "2022-05-08T04:17:23.000Z",
+                "status": "5",
+                "provider_id": 102,
+                "message": "Plan review process completed"
+            }
+        ],
+        "staff_info": [
+            {
+                "provider_id": 102,
+                "provider_first_name": "Varun",
+                "provider_last_name": "Sengupta",
+                "agent_id": "A607093"
+            }
+        ]
+    },
+    {
+        "id": 137,
+        "first_name": "EKTA",
+        "last_name": "SINGH",
+        "isd_code": "+1",
+        "phone": "9932868652",
+        "email": "Rt@yopmail.com",
+        "token": "J 111372239",
+        "alien_number": "4ht9U8B:653",
+        "assinged_queue": [
+            {
+                "queue_id": 1,
+                "queue_name": "Adjudication",
+                "token": "J 111372239",
+                "meeting_room_id": null,
+                "meeting_duration": null,
+                "alien_number": "4ht9U8B:653",
+                "created_on": "2022-04-27T13:39:04.000Z",
+                "updated_on": "2022-05-08T04:17:53.000Z",
+                "status": "5",
+                "provider_id": 102,
+                "message": "Plan review process completed"
+            }
+        ],
+        "staff_info": [
+            {
+                "provider_id": 102,
+                "provider_first_name": "Varun",
+                "provider_last_name": "Sengupta",
+                "agent_id": "A607093"
+            }
+        ]
+    },
+    {
+        "id": 138,
+        "first_name": "EKTA",
+        "last_name": "SINGH",
+        "isd_code": "+1",
+        "phone": "9768508480",
+        "email": "nitinpatiln73@gmail.com",
+        "token": "J 111382240",
+        "alien_number": "8r6RHJj:662",
+        "assinged_queue": [
+            {
+                "queue_id": 1,
+                "queue_name": "Adjudication",
+                "token": "J 111382240",
+                "meeting_room_id": "",
+                "meeting_duration": null,
+                "alien_number": "8r6RHJj:662",
+                "created_on": "2022-04-29T10:16:32.000Z",
+                "updated_on": "2022-05-08T18:16:12.000Z",
+                "status": "5",
+                "provider_id": 102,
+                "message": "Plan review process completed"
+            }
+        ],
+        "staff_info": [
+            {
+                "provider_id": 102,
+                "provider_first_name": "Varun",
+                "provider_last_name": "Sengupta",
+                "agent_id": "A607093"
+            }
+        ]
+    },
+    {
+        "id": 141,
+        "first_name": "EKTA",
+        "last_name": "SINGH",
+        "isd_code": "+1",
+        "phone": "9932858523",
+        "email": "Gd@gmail.com",
+        "token": "J 111412243",
+        "alien_number": "j4YTh4a:668",
+        "assinged_queue": [
+            {
+                "queue_id": 1,
+                "queue_name": "Adjudication",
+                "token": "J 111412243",
+                "meeting_room_id": null,
+                "meeting_duration": null,
+                "alien_number": "j4YTh4a:668",
+                "created_on": "2022-04-29T11:24:45.000Z",
+                "updated_on": "2022-05-08T22:02:52.000Z",
+                "status": "5",
+                "provider_id": 102,
+                "message": "Plan review process completed"
+            }
+        ],
+        "staff_info": [
+            {
+                "provider_id": 102,
+                "provider_first_name": "Varun",
+                "provider_last_name": "Sengupta",
+                "agent_id": "A607093"
+            }
+        ]
+    },
+    {
+        "id": 148,
+        "first_name": "EKTA",
+        "last_name": "SINGH",
+        "isd_code": "+1",
+        "phone": "9932868602",
+        "email": "Tt@yopmail.com",
+        "token": "J 111482252",
+        "alien_number": "p6a9AVT:730",
+        "assinged_queue": [
+            {
+                "queue_id": 1,
+                "queue_name": "Adjudication",
+                "token": "J 111482252",
+                "meeting_room_id": "",
+                "meeting_duration": null,
+                "alien_number": "p6a9AVT:730",
+                "created_on": "2022-05-06T10:44:36.000Z",
+                "updated_on": "2022-05-10T04:38:50.000Z",
+                "status": "5",
+                "provider_id": 102,
+                "message": "Plan review process completed"
+            }
+        ],
+        "staff_info": [
+            {
+                "provider_id": 102,
+                "provider_first_name": "Varun",
+                "provider_last_name": "Sengupta",
+                "agent_id": "A607093"
+            }
+        ]
+    }
 ]
-let cards = ["A", "2","3","4","5","6","7","8","9","J","Q","K"]
+let cards = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K"]
 //Application
 
 let Fruit = ["apple",
-  "apricot",
-  "avocado",
-  "banana",
-  "bell pepper",
-  "bilberry",
-  "blackberry",
-  "blackcurrant",
-  "blood orange",
-  "blueberry",
-  "boysenberry",
-  "breadfruit",
-  "canary melon",
-  "cantaloupe",
-  "cherimoya",
-  "cherry",
-  "chili pepper",
-  "clementine",
-  "cloudberry",
-  "coconut",
-  "cranberry",
-  "cucumber",
-  "currant",
-  "damson",
-  "date",
-  "dragonfruit",
-  "durian",
-  "eggplant",
-  "elderberry",
-  "feijoa",
-  "fig",
-  "goji berry",
-  "gooseberry",
-  "grape",
-  "grapefruit",
-  "guava",
-  "honeydew",
-  "huckleberry",
-  "jackfruit",
-  "jambul",
-  "jujube",
-  "kiwi fruit",
-  "kumquat",
+    "apricot",
+    "avocado",
+    "banana",
+    "bell pepper",
+    "bilberry",
+    "blackberry",
+    "blackcurrant",
+    "blood orange",
+    "blueberry",
+    "boysenberry",
+    "breadfruit",
+    "canary melon",
+    "cantaloupe",
+    "cherimoya",
+    "cherry",
+    "chili pepper",
+    "clementine",
+    "cloudberry",
+    "coconut",
+    "cranberry",
+    "cucumber",
+    "currant",
+    "damson",
+    "date",
+    "dragonfruit",
+    "durian",
+    "eggplant",
+    "elderberry",
+    "feijoa",
+    "fig",
+    "goji berry",
+    "gooseberry",
+    "grape",
+    "grapefruit",
+    "guava",
+    "honeydew",
+    "huckleberry",
+    "jackfruit",
+    "jambul",
+    "jujube",
+    "kiwi fruit",
+    "kumquat",
 
-  "lime",
-  "loquat",
-  "lychee",
-  "mandarine",
-  "mango",
-  "mulberry",
-  "nectarine",
-  "nut",
-  "olive",
-  "orange",
-  "papaya",
-  "passionfruit",
-  "peach",
-  "pear",
-  "persimmon",
-  "physalis",
-  "pineapple",
-  "plum",
-  "pomegranate",
-  "pomelo",
-  "purple mangosteen",
-  "quince",
-  "raisin",
-  "rambutan",
-  "raspberry",
-  "redcurrant",
-  "rock melon",
-  "salal berry",
-  "satsuma",
-  "star fruit",
-  "strawberry",
-  "tamarillo",
-  "tangerine",
-  "tomato",
-  "ugli fruit",
-  "watermelon"]
+    "lime",
+    "loquat",
+    "lychee",
+    "mandarine",
+    "mango",
+    "mulberry",
+    "nectarine",
+    "nut",
+    "olive",
+    "orange",
+    "papaya",
+    "passionfruit",
+    "peach",
+    "pear",
+    "persimmon",
+    "physalis",
+    "pineapple",
+    "plum",
+    "pomegranate",
+    "pomelo",
+    "purple mangosteen",
+    "quince",
+    "raisin",
+    "rambutan",
+    "raspberry",
+    "redcurrant",
+    "rock melon",
+    "salal berry",
+    "satsuma",
+    "star fruit",
+    "strawberry",
+    "tamarillo",
+    "tangerine",
+    "tomato",
+    "ugli fruit",
+    "watermelon"]
 console.log(Fruit.length);
 Fruit.push("Lemon")
 console.log(Fruit.length);
@@ -597,24 +597,24 @@ Fruit.shift()
 // }
 
 function millisecondsToStrforTokenList(milliseconds) {
-  let temp = milliseconds / 1000;
-  let years = Math.floor(temp / 31536000),
-  months = Math.floor((temp %= 31536000) / (86400*30)),
-    days = Math.floor((temp %= 31536000) / 86400),
-    hours = Math.floor((temp %= 86400) / 3600),
-    minutes = Math.floor((temp %= 3600) / 60),
-    seconds = temp % 60;
-   
-    
+    let temp = milliseconds / 1000;
+    let years = Math.floor(temp / 31536000),
+        months = Math.floor((temp %= 31536000) / (86400 * 30)),
+        days = Math.floor((temp %= 31536000) / 86400),
+        hours = Math.floor((temp %= 86400) / 3600),
+        minutes = Math.floor((temp %= 3600) / 60),
+        seconds = temp % 60;
 
-  if (days || hours || seconds || minutes) {
-    return (years ? years + " years " : "") + (months ? months + " months " : "") +
-      (days ? days + " days " : "") +
-      (hours ? hours + " hours " : "") +
-      (minutes ? minutes + " mimutes" : "")
-  }
 
-  return "0";
+
+    if (days || hours || seconds || minutes) {
+        return (years ? years + " years " : "") + (months ? months + " months " : "") +
+            (days ? days + " days " : "") +
+            (hours ? hours + " hours " : "") +
+            (minutes ? minutes + " mimutes" : "")
+    }
+
+    return "0";
 }
 
 ///console.log("1580428000",millisecondsToStr(1580428000) );
@@ -627,82 +627,82 @@ let arr = []
 let d1, d2;
 let waitingQ;
 let inservice;
-let lastqueue; 
-let message, statusName,staff;
+let lastqueue;
+let message, statusName, staff;
 result.forEach(element => {
-    
-   // let  isAvailabelForAssign = element.assinged_queue.slice(-1).pop();
+
+    // let  isAvailabelForAssign = element.assinged_queue.slice(-1).pop();
     let newStaff = element.staff_info.slice(-1).pop();
     //let fqueue = element.assinged_queue.slice().pop();
-    let newass = element.assinged_queue[element.assinged_queue.length-1]
+    let newass = element.assinged_queue[element.assinged_queue.length - 1]
     let first = element.assinged_queue.find(() => true)
     let dateNew = new Date(first.created_on);
-   // console.log(dateNew);
-    
+    // console.log(dateNew);
+
     // console.log(newStaff);
     element["queueStatus"] = newass.status;
     element["message"] = newass.message;
     element["message"] = newass.message;
-    element["createdDate"]= first.created_on;
+    element["createdDate"] = first.created_on;
 
     if (newStaff) {
         element["provider_first_name"] = newStaff.provider_first_name;
-         element["provider_last_name"] = newStaff.provider_last_name.slice(0,1);
+        element["provider_last_name"] = newStaff.provider_last_name.slice(0, 1);
         //  element.provider_last_name.slice(0,1);
         element["provider_id"] = newStaff.provider_id;
-    } else{
+    } else {
         element["provider_first_name"] = "--";
-    element["provider_last_name"] = "-";
-    element["provider_id"] = null;
+        element["provider_last_name"] = "-";
+        element["provider_id"] = null;
     }
     if (newass.status == 5) {
         element["statusName"] = "Completed - "
-    
-      }else if(newass.status == 2) {
+
+    } else if (newass.status == 2) {
         element["statusName"] = "Inservice"
-    
-      }else if(newass.status == 1) {
+
+    } else if (newass.status == 1) {
         element["statusName"] = "Waiting"
-    
-      }else{
+
+    } else {
         element["statusName"] = "Waiting"
-      }
-  element.assinged_queue.forEach(Object => {
-    if (Object.status==5 || Object.status==3) {
-        Object.queue_name = `✓ ${Object.queue_name}`;  
-    }else  if (Object.status==2 ) {
-        Object.queue_name = `- ${Object.queue_name}`;  
-    } else  if (Object.status==1) {
-        Object.queue_name = `⧖ ${Object.queue_name}`;  
-    } else{
-        Object.queue_name = `⧖ ${Object.queue_name}`;
     }
-    d1 = new Date(Object.created_on);
-    d2 = new Date(Object.updated_on)
-    difference = d2 - d1;
-    Object["newTime"] = difference;
-    
-  });
-  //console.log(element);
- // element["isAvailabelForAssign"] = {...isAvailabelForAssign};
-  let totalTime = element.assinged_queue.reduce((n, { newTime }) => n + newTime, 0);
-  totalTime = (millisecondsToStrforTokenList(totalTime));
-  
-  let updateDate = new Date(first.created_on)
-  let todayDate = new Date();
-  let diff = todayDate- updateDate;
-  
-  console.log("todayDate",millisecondsToStrforTokenList(diff)+millisecondsToStrforTokenList(difference));
-  if (newass.status ==1 ) {
-    totalTime = millisecondsToStrforTokenList(diff)+millisecondsToStrforTokenList(difference)
-    
-  } else if(newass.status ==2) {
-    totalTime = millisecondsToStrforTokenList(diff)
-  } else if (newass.status ==3){
-    totalTime = millisecondsToStrforTokenList(diff)
-  }
-  element["totalTime"] = totalTime;
- 
+    element.assinged_queue.forEach(Object => {
+        if (Object.status == 5 || Object.status == 3) {
+            Object.queue_name = `✓ ${Object.queue_name}`;
+        } else if (Object.status == 2) {
+            Object.queue_name = `- ${Object.queue_name}`;
+        } else if (Object.status == 1) {
+            Object.queue_name = `⧖ ${Object.queue_name}`;
+        } else {
+            Object.queue_name = `⧖ ${Object.queue_name}`;
+        }
+        d1 = new Date(Object.created_on);
+        d2 = new Date(Object.updated_on)
+        difference = d2 - d1;
+        Object["newTime"] = difference;
+
+    });
+    //console.log(element);
+    // element["isAvailabelForAssign"] = {...isAvailabelForAssign};
+    let totalTime = element.assinged_queue.reduce((n, { newTime }) => n + newTime, 0);
+    totalTime = (millisecondsToStrforTokenList(totalTime));
+
+    let updateDate = new Date(first.created_on)
+    let todayDate = new Date();
+    let diff = todayDate - updateDate;
+
+    console.log("todayDate", millisecondsToStrforTokenList(diff) + millisecondsToStrforTokenList(difference));
+    if (newass.status == 1) {
+        totalTime = millisecondsToStrforTokenList(diff) + millisecondsToStrforTokenList(difference)
+
+    } else if (newass.status == 2) {
+        totalTime = millisecondsToStrforTokenList(diff)
+    } else if (newass.status == 3) {
+        totalTime = millisecondsToStrforTokenList(diff)
+    }
+    element["totalTime"] = totalTime;
+
 
 });
 
@@ -733,7 +733,430 @@ console.log(result);
 //         let temp  =array[currantIndex];
 //         array[currantIndex]=array[randomIndex];
 //         array[randomIndex]=temp;
-        
+
 //     }
 //     return array;
 // }
+
+let waiting = [], completed = [], inService = [], reQueue = [];
+
+console.log("Room Config Modifications");
+const waitingList = {
+    "room_details": [
+        {
+            "id": 1,
+            "name": "DPIE",
+            "default_queue_id": 1,
+            "status": "active",
+            "created_by_user_id": 1,
+            "last_updated_by_user_id": 1,
+            "created_on": "2020-06-04T07:41:30.000Z",
+            "updated_on": "2020-08-18T11:51:47.000Z",
+            "meeting_service_type": "1",
+            "start_time": "1:00 AM",
+            "end_time": "11:59 PM",
+            "time_zone": "America/New_York",
+            "check_in_buffer": 3600,
+            "room_logo": null,
+            "queue_topic": "biinc_room_1_adjudication_1_1"
+        }
+    ],
+    "room_config":[
+        {
+            "name": "DPIE",
+            "id": 1,
+            "room_id": 1,
+            "queue_id": 1,
+            "queue_topic": "biinc_room_1_adjudication_1_1",
+            "queue_name_identifier": "Adjudication",
+            "status": "active",
+            "default_waiting_time": 600,
+            "is_automated": 0,
+            "next_room_queue_id": null,
+            "created_by_user_id": 1,
+            "last_updated_by_user_id": null,
+            "created_on": "2022-04-15T13:27:42.000Z",
+            "updated_on": "2022-09-16T13:22:28.000Z",
+            "queue_name": "Adjudication",
+            "description": "Adjudication",
+            "customers": {
+                "waiting": [
+                    {
+                        "id": 2881,
+                        "queue_id": 1,
+                        "room_id": 1,
+                        "customer_id": 268,
+                        "status": "1",
+                        "is_deleted": "active",
+                        "token": "J 112682881",
+                        "meeting_room_id": null,
+                        "meeting_duration": null,
+                        "message": "Plan review process waiting",
+                        "alien_number": "111-000-0000",
+                        "project_dox_case_id": null,
+                        "case_name": null,
+                        "case_type": null,
+                        "created_on": "2022-09-22T06:52:54.000Z",
+                        "updated_on": "2022-09-22T06:52:54.000Z",
+                        "provider_id": null,
+                        "first_name": "sarkar",
+                        "last_name": "kishor",
+                        "isd_code": "+1",
+                        "phone": "8765432198",
+                        "email": "kishasr.sa7k68r@inadev.com",
+                        "initial_created_on": "2022-09-22T06:52:54.000Z",
+                        "agent_id": null,
+                        "meeting_service_type": "1",
+                        "blocked": true,
+                        "staff": "UNASSIGNED",
+                        "status_text": "Waiting"
+                    }
+                ],
+                "inservice": [
+                    {
+                        "id": 2880,
+                        "queue_id": 1,
+                        "room_id": 1,
+                        "customer_id": 267,
+                        "status": "2",
+                        "is_deleted": "active",
+                        "token": "J 112672880",
+                        "meeting_room_id": null,
+                        "meeting_duration": null,
+                        "message": "Plan review process in Service",
+                        "alien_number": "111-000-8888",
+                        "project_dox_case_id": null,
+                        "case_name": null,
+                        "case_type": null,
+                        "created_on": "2022-09-22T05:57:50.000Z",
+                        "updated_on": "2022-09-22T06:54:59.000Z",
+                        "provider_id": 102,
+                        "first_name": "sarkar",
+                        "last_name": "kishor",
+                        "isd_code": "+1",
+                        "phone": "8765432198",
+                        "email": "kishasr.sa7k667a8r@inadev.com",
+                        "initial_created_on": "2022-09-22T05:57:50.000Z",
+                        "agent_id": "A607093",
+                        "meeting_service_type": "1",
+                        "blocked": true,
+                        "provider_first_name": "Varun",
+                        "provider_last_name": "S",
+                        "staff": "ASSIGNED",
+                        "status_text": "In Service"
+                    }
+                ],
+                "completed": [],
+                "re_served": []
+            },
+            "inwaiting": 1,
+            "inservice": 1,
+            "completed": 0,
+            "re_served": 0,
+            "servicelabel": "Service",
+            "waitinglabel": "Waiting"
+        },
+        {
+            "name": "DPIE",
+            "id": 2,
+            "room_id": 1,
+            "queue_id": 2,
+            "queue_topic": "biinc_room_1_interview_2_2",
+            "queue_name_identifier": "Interview",
+            "status": "active",
+            "default_waiting_time": 600,
+            "is_automated": 0,
+            "next_room_queue_id": null,
+            "created_by_user_id": 1,
+            "last_updated_by_user_id": null,
+            "created_on": "2022-04-15T13:27:42.000Z",
+            "updated_on": "2022-09-16T13:22:29.000Z",
+            "queue_name": "Interview",
+            "description": "Interview",
+            "customers": {
+                "waiting": [
+                    {
+                        "id": 2884,
+                        "queue_id": 2,
+                        "room_id": 1,
+                        "customer_id": 167,
+                        "status": "1",
+                        "is_deleted": "active",
+                        "token": "J 111672883",
+                        "meeting_room_id": null,
+                        "meeting_duration": null,
+                        "message": "Plan review process waiting",
+                        "alien_number": "4TBS5Ly:895",
+                        "project_dox_case_id": "",
+                        "case_name": "",
+                        "case_type": "",
+                        "created_on": "2022-09-22T10:09:14.000Z",
+                        "updated_on": "2022-09-22T10:09:21.000Z",
+                        "provider_id": null,
+                        "first_name": "EKTA",
+                        "last_name": "SINGH",
+                        "isd_code": "+1",
+                        "phone": "9600799441",
+                        "email": "santosh.kumar@inadev.com",
+                        "initial_created_on": "2022-09-22T09:44:44.000Z",
+                        "agent_id": null,
+                        "meeting_service_type": "1",
+                        "blocked": true,
+                        "staff": "UNASSIGNED",
+                        "status_text": "Waiting"
+                    }
+                ],
+                "inservice": [
+                    {
+                        "id": 2874,
+                        "queue_id": 2,
+                        "room_id": 1,
+                        "customer_id": 256,
+                        "status": "2",
+                        "is_deleted": "active",
+                        "token": "J 112562862",
+                        "meeting_room_id": null,
+                        "meeting_duration": null,
+                        "message": "Plan review process in Service",
+                        "alien_number": "111-999-1115",
+                        "project_dox_case_id": "",
+                        "case_name": "",
+                        "case_type": "",
+                        "created_on": "2022-09-22T05:15:01.000Z",
+                        "updated_on": "2022-09-22T06:01:26.000Z",
+                        "provider_id": 102,
+                        "first_name": "sarkar",
+                        "last_name": "kishor",
+                        "isd_code": "+1",
+                        "phone": "8765432198",
+                        "email": "kishor.sarkar5@inadev.com",
+                        "initial_created_on": "2022-09-21T05:56:35.000Z",
+                        "agent_id": "A607093",
+                        "meeting_service_type": "1",
+                        "blocked": true,
+                        "provider_first_name": "Varun",
+                        "provider_last_name": "S",
+                        "staff": "ASSIGNED",
+                        "status_text": "In Service"
+                    }
+                ],
+                "completed": [],
+                "re_served": []
+            },
+            "inwaiting": 1,
+            "inservice": 1,
+            "completed": 0,
+            "re_served": 0,
+            "servicelabel": "Service",
+            "waitinglabel": "Waiting"
+        },
+        {
+            "name": "DPIE",
+            "id": 3,
+            "room_id": 1,
+            "queue_id": 3,
+            "queue_topic": "biinc_room_1_oath_administration_3_3",
+            "queue_name_identifier": "Oath Administration",
+            "status": "active",
+            "default_waiting_time": 600,
+            "is_automated": 0,
+            "next_room_queue_id": null,
+            "created_by_user_id": 1,
+            "last_updated_by_user_id": null,
+            "created_on": "2022-04-15T13:27:42.000Z",
+            "updated_on": "2022-09-16T13:22:29.000Z",
+            "queue_name": "Oath Administration",
+            "description": "Oath Administration",
+            "customers": {
+                "waiting": [
+                    {
+                        "id": 2875,
+                        "queue_id": 3,
+                        "room_id": 1,
+                        "customer_id": 256,
+                        "status": "1",
+                        "is_deleted": "active",
+                        "token": "J 112562862",
+                        "meeting_room_id": null,
+                        "meeting_duration": null,
+                        "message": "Plan review process waiting",
+                        "alien_number": "111-999-1115",
+                        "project_dox_case_id": "",
+                        "case_name": "",
+                        "case_type": "",
+                        "created_on": "2022-09-22T05:15:05.000Z",
+                        "updated_on": "2022-09-22T05:15:11.000Z",
+                        "provider_id": null,
+                        "first_name": "sarkar",
+                        "last_name": "kishor",
+                        "isd_code": "+1",
+                        "phone": "8765432198",
+                        "email": "kishor.sarkar5@inadev.com",
+                        "initial_created_on": "2022-09-21T05:56:35.000Z",
+                        "agent_id": null,
+                        "meeting_service_type": "1",
+                        "blocked": true,
+                        "staff": "UNASSIGNED",
+                        "status_text": "Waiting"
+                    },
+                    {
+                        "id": 2882,
+                        "queue_id": 3,
+                        "room_id": 1,
+                        "customer_id": 267,
+                        "status": "1",
+                        "is_deleted": "active",
+                        "token": "J 112672880",
+                        "meeting_room_id": null,
+                        "meeting_duration": null,
+                        "message": "Plan review process waiting",
+                        "alien_number": "111-000-8888",
+                        "project_dox_case_id": null,
+                        "case_name": null,
+                        "case_type": null,
+                        "created_on": "2022-09-22T06:56:12.000Z",
+                        "updated_on": "2022-09-22T06:56:12.000Z",
+                        "provider_id": null,
+                        "first_name": "sarkar",
+                        "last_name": "kishor",
+                        "isd_code": "+1",
+                        "phone": "8765432198",
+                        "email": "kishasr.sa7k667a8r@inadev.com",
+                        "initial_created_on": "2022-09-22T05:57:50.000Z",
+                        "agent_id": null,
+                        "meeting_service_type": "1",
+                        "blocked": true,
+                        "staff": "UNASSIGNED",
+                        "status_text": "Waiting"
+                    }
+                ],
+                "inservice": [],
+                "completed": [],
+                "re_served": []
+            },
+            "inwaiting": 2,
+            "inservice": 0,
+            "completed": 0,
+            "re_served": 0,
+            "servicelabel": "Service",
+            "waitinglabel": "Waiting"
+        }
+    ],
+    
+    "estimated_waiting_time": "0:02 Minutes",
+    "status": 200
+}
+
+const socketData = [
+    "biinc_room_1_adjudication_1_1",
+    {
+        "type": "CREATE_CUSTOMER_MESSAGE",
+        "payload": {
+            "name": "DPIE",
+            "id": 1,
+            "room_id": 1,
+            "queue_id": 1,
+            "queue_topic": "biinc_room_1_adjudication_1_1",
+            "queue_name_identifier": "Adjudication",
+            "status": "active",
+            "default_waiting_time": 600,
+            "is_automated": 0,
+            "next_room_queue_id": null,
+            "created_by_user_id": 1,
+            "last_updated_by_user_id": null,
+            "created_on": "2022-04-15T13:27:42.000Z",
+            "updated_on": "2022-09-16T13:22:28.000Z",
+            "queue_name": "Adjudication",
+            "provider_id": null,
+            "agent_id": null,
+            "customer": {
+                "id": 2881,
+                "queue_id": 1,
+                "room_id": 1,
+                "customer_id": 268,
+                "status": "1",
+                "is_deleted": "active",
+                "token": "J 112682881",
+                "meeting_room_id": null,
+                "meeting_duration": null,
+                "message": null,
+                "alien_number": "111-000-0000",
+                "project_dox_case_id": null,
+                "case_name": null,
+                "case_type": null,
+                "created_on": "2022-09-22T06:52:54.000Z",
+                "updated_on": "2022-09-22T06:52:54.000Z",
+                "provider_id": null,
+                "initial_created_on": "2022-09-22T06:52:54.000Z",
+                "first_name": "sarkar",
+                "last_name": "kishor",
+                "isd_code": "+1",
+                "phone": "8765432198",
+                "email": "kishasr.sa7k68r@inadev.com"
+            },
+            "op_flag": "ADD"
+        }
+    }
+]
+
+console.log(waitingList.room_config);
+// console.log(socketData[1].payload.customer);
+
+
+waitingList["room_config"].forEach(element => {
+    element["newCustomer"] = {};
+    element["newCustomer"]["waiting"] = waiting;
+    element["newCustomer"]["completed"] = completed;
+    element["newCustomer"]["inService"] = inService;
+    element["newCustomer"]["reQueue"] = reQueue;
+
+    // for (const iterator of element.customers) {
+    //     console.log("element", iterator);
+    //     if (iterator.status==1) {
+    //         waiting.push(iterator)
+    //         break;
+            
+    //     }
+    // }
+    
+    // element["customers"].forEach(Object => {
+    //    // console.log(Object);
+    //     if (Object.status == 1) {
+    //         waiting.push(Object);
+
+    //     }
+    //    console.log(element);
+
+    // });
+    if (element.customers.status==1) {
+        waiting.push(element.customers);
+    }
+    
+    
+    
+
+
+
+
+});
+
+// console.log(waitingList.room_config);
+ this.name(socketData[1]);
+
+
+function name(params) {
+    let socketDatapath = params["payload"]["customer"];
+    console.log("socketDatapath",socketDatapath);
+    waitingList.room_config.forEach((element,index) => {
+        if (socketDatapath.status==1 && socketDatapath.queue_id==element.queue_id ) {
+
+            waitingList["room_config"][index]["customers"]["waiting"].push(socketDatapath)
+        }
+        // console.log();
+ 
+    });
+    console.log(params["payload"]["customer"]);
+    
+}
+
+console.log(waitingList);
