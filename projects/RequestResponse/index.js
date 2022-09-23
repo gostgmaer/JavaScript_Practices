@@ -48,7 +48,8 @@ window.onclick = function (event) {
 
 //Application
 
-
+const promise = new Promise;
+let fileLoaded = 
 
 
 
