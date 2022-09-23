@@ -63,24 +63,84 @@ console.log("setInterVal ===================");
 //   for (let index = 0; index < 10; index++) {
 //     const element = array[index];
 //     console.log(element);
-    
+
 //   }
 // }
 
 let count = 0;
-let max = window.prompt("Enter a Number:");
-max=Number(max)
+let max = 5;
+max = Number(max)
 
-setInterval(() => {
-  countUp()
-}, 1000);
+// setInterval(() => {
+//   countUp()
+// }, 1000);
+
+
+const myTimer = setInterval(countUp, 1000);
 
 function countUp() {
-  count +=1;
+  count += 1;
   console.log(count);
-  if (count == max) {
-    clearInterval(setInterval);
-    
+  if (count >= max) {
+    clearInterval(myTimer);
+
+  }
+
+}
+
+
+
+const myLabel = document.querySelector("#myLabel")
+let date = new Date;
+var options = {
+  weekday: "short",
+  year: "numeric",
+  month: "2-digit",
+  day: "numeric"
+};
+// date = date.toLocaleString("en")
+let ddate = date.getFullYear()
+let getDate = date.getDate()
+let getDay = date.getDay()
+let getHours = date.getHours()
+let getMilliseconds = date.getMilliseconds()
+let getMinutes = date.getMinutes()
+let getMonth = date.getMonth()
+let getSeconds = date.getSeconds()
+let getTime = date.getTime()
+let getTimezoneOffset = date.getTimezoneOffset()
+let getUTCDate = date.getUTCDate()
+console.log(date);
+
+myLabel.innerHTML = dateFormat(date)
+
+
+function dateFormat(date) {
+  let year = date.getFullYear(), month = date.getMonth(), day = date.getDay(), hours = date.getHours(), minutes = date.getMinutes(), seconds = date.getSeconds();
+  return `${day}-${month}-${year} ${hours}:${minutes}:${seconds}`
+}
+
+
+// Clock Application
+
+
+
+
+
+function updatedateTime() {
+  let dateTime =  new Date();
+  myLabel.innerHTML = formatHours(dateTime);
+  function formatHours(date) {
+    let hours = date.getHours(), minutes = date.getMinutes(), seconds = date.getSeconds(), ampm= hours>12? "PM":"AM";
+    hours=(hours%12)||12;
+    return `${hours}:${minutes}:${seconds} ${ampm}`
   }
   
 }
+
+setInterval(() => {
+  this.updatedateTime()
+}, 1000);
+
+
+//async
