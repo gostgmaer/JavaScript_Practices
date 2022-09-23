@@ -1141,7 +1141,7 @@ waitingList["room_config"].forEach(element => {
 });
 
 // console.log(waitingList.room_config);
- this.name(socketData[1]);
+//  this.name(socketData[1]);
 
 
 function name(params) {
@@ -1159,4 +1159,10 @@ function name(params) {
     
 }
 
-console.log(waitingList);
+console.log(waitingList.room_details);
+
+
+import * as waitList from "./assets/js/data.js";
+
+
+console.log(waitList);
