@@ -75,3 +75,40 @@ wait(3000).then(()=>console.log("thanks"));
 
 
 
+//async
+
+
+async function loadFile() {
+  let fileLoaded = false;
+  if (fileLoaded) {
+     return "File Loaded:...";
+    
+  } else {
+    throw "File not loaded";
+    
+  }
+}
+loadFile().then(value=>{
+  console.log(value);
+
+})
+.catch(error=> console.log(error));
+
+
+//await
+async function stratProcess(params) {
+  try {
+    let message= await loadFile();
+    console.log(message);
+    
+  } catch (error) {
+    console.log(error);
+    
+  }
+ 
+}
+
+stratProcess();
+// await awateLoafIle(()=>{
+
+// })
