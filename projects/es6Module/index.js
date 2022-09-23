@@ -49,12 +49,13 @@ window.onclick = function (event) {
 
 
 import { getArea,getCircumference,PI} from "./assets/js/math_util.js";
+import * as mathUtil from "./assets/js/math_util.js";
 
-console.log(PI);
+console.log(mathUtil.PI);
 
-console.log(getArea(20));
+console.log(mathUtil.getArea(20));
 
 
-console.log(getCircumference(10));
+console.log(mathUtil.getCircumference(10));
 
 
