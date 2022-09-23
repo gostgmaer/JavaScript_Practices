@@ -44,10 +44,21 @@ window.onclick = function (event) {
   }
 }
 
+//Applicaion
+
+
+import * as index from "./assets/js/index.js";
 
 
 
-
-
-
-
+let firstname = document.getElementsByName("firstname"),
+  middlename = document.getElementsByName("middlename"),
+  lastname = document.getElementsByName("lastname"),
+  countryCode = document.getElementsByName("country code"),
+  phone = document.getElementsByName("phone"),
+  email = document.getElementsByName("email"),
+  psw = document.getElementsByName("psw"),
+  pswRepeat = document.getElementsByName("psw-repeat") ;
+firstname = firstname[0]
+firstname.value = 8888
+console.log(firstname,middlename,lastname,countryCode,phone,email,psw,pswRepeat);
