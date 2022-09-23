@@ -45,9 +45,16 @@ window.onclick = function (event) {
 }
 
 
+//es6Module started
 
 
+import { getArea,getCircumference,PI} from "./assets/js/math_util.js";
+
+console.log(PI);
+
+console.log(getArea(20));
 
 
+console.log(getCircumference(10));
 
 
