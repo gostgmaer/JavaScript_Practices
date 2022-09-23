@@ -3,7 +3,7 @@
 let webtitle = document.getElementById("webtiele")
 let title = document.getElementById("title");
 let modalTitle = document.getElementById("modal-title");
-const titleString = "TempratureConversion Web App"
+const titleString = "RequestResponse Web App"
 title.innerText = titleString;
 webtitle.innerText = titleString;
 modalTitle.innerText = titleString;
@@ -45,6 +45,8 @@ window.onclick = function (event) {
 }
 
 
+
+//Application
 
 
 
