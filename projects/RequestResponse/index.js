@@ -48,8 +48,29 @@ window.onclick = function (event) {
 
 //Application
 
-const promise = new Promise;
-let fileLoaded = 
+let promise= new Promise((resolve, reject) => {
+  let fileLoaded = false;
+  if (fileLoaded) {
+     resolve("File Loaded:...")
+    
+  } else {
+    reject("File not loaded")
+    
+  }
+});
+
+promise.then(value=>{
+  console.log(value);
+
+})
+.catch(error=> console.log(error));
+
+
+const wait = time => new Promise((resolve, reject) => {
+  setTimeout(resolve, time);
+  
+});
+wait(3000).then(()=>console.log("thanks"));
 
 
 
