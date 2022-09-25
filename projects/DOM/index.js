@@ -51,14 +51,36 @@ import * as index from "./assets/js/index.js";
 
 
 
-let firstname = document.getElementsByName("firstname"),
-  middlename = document.getElementsByName("middlename"),
-  lastname = document.getElementsByName("lastname"),
-  countryCode = document.getElementsByName("country code"),
-  phone = document.getElementsByName("phone"),
-  email = document.getElementsByName("email"),
-  psw = document.getElementsByName("psw"),
-  pswRepeat = document.getElementsByName("psw-repeat") ;
-firstname = firstname[0]
-firstname.value = 8888
-console.log(firstname,middlename,lastname,countryCode,phone,email,psw,pswRepeat);
+// let firstname = document.getElementsByName("firstname"),
+//   middlename = document.getElementsByName("middlename"),
+//   lastname = document.getElementsByName("lastname"),
+//   countryCode = document.getElementsByName("country code"),
+//   phone = document.getElementsByName("phone"),
+//   email = document.getElementsByName("email"),
+//   psw = document.getElementsByName("psw"),
+//   pswRepeat = document.getElementsByName("psw-repeat") ;
+// firstname = firstname[0]
+
+// firstname.value = 8888
+
+// console.log(firstname,middlename,lastname,countryCode,phone,email,psw,pswRepeat);
+
+const myDiv = document.querySelector(".my-div")
+// myDiv.addEventListener("")
+
+
+window.addEventListener("keydown",move);
+let x=0,y=0;
+
+function move(keyEvent) {
+  switch (keyEvent.key) {
+    case "ArrowDown":
+      y+=5;
+      myDiv.style.top=y+"px"
+      break;
+
+    default:
+      break;
+  }
+
+}
