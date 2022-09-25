@@ -75,7 +75,7 @@ window.onload= function () {
         
       } 
       if (tens > 99) {
-        console.log("seconds",seconds);
+        // console.log("seconds",seconds);
         seconds++;
         appendSeconds.textContent = "0" + seconds;
         tens = 0;
