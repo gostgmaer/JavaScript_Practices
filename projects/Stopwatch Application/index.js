@@ -47,7 +47,57 @@ window.onclick = function (event) {
 
 
 
+//Stopwatch Application Start
 
 
+window.onload= function () {
+  let seconds = 00; 
+  let tens = 00; 
+  let appendTens = document.getElementById("tens")
+  let appendSeconds = document.getElementById("seconds")
+  let buttonStart = document.getElementById('button-start');
+  let buttonStop = document.getElementById('button-stop');
+  let buttonReset = document.getElementById('button-reset');
+  let Interval ;
 
+    buttonStart.onclick=function () {
+      clearInterval(Interval);
+      Interval=setInterval(startTimer,10);
+    }
+
+    function startTimer() {
+      tens++;
+      if(tens <= 9){
+        appendTens.textContent = "0" + tens;
+      }
+      if (tens > 9){
+        appendTens.textContent = tens;
+        
+      } 
+      if (tens > 99) {
+        console.log("seconds",seconds);
+        seconds++;
+        appendSeconds.textContent = "0" + seconds;
+        tens = 0;
+        appendTens.textContent = "0" + 0;
+      }
+      
+      if (seconds > 9){
+        appendSeconds.textContent = seconds;
+      }
+      
+    }
+    buttonStop.addEventListener("click",function () {
+      clearInterval(Interval);
+    })
+    buttonReset.onclick = function() {
+      clearInterval(Interval);
+     tens = "00";
+     seconds = "00";
+     appendTens.innerHTML = tens;
+     appendSeconds.innerHTML = seconds;
+   }
+
+
+}
 
