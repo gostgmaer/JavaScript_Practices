@@ -30,10 +30,14 @@
             </section>
             <section id="body-section" class="m-auto" >
                 <div class="col-12" >
-
-                    <button type="button" id="add" class="btn btn-primary">Add</button>
-                    <button type="button" id="remove" class="btn btn-primary">Remove</button>
-                   
+                    <div class="wrapper">
+                        <h1>Stopwatch</h1>
+                        <h2>Vanilla JavaScript Stopwatch</h2>
+                        <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+                        <button id="button-start">Start</button>
+                        <button id="button-stop">Stop</button>
+                        <button id="button-reset">Reset</button>
+                        </div>    
                     
                 </div>
 
@@ -52,9 +56,8 @@
 
 
     <footer>
-        <script type="module" src="./index.js"></script>
+        <script src="./index.js"></script>
         <script src="./assets/js/index.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
     </footer>
     
 </body>
